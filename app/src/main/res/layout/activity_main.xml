@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscripcion clases de ingles
+                para niños"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/titulo"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/icono"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre completo del niño:"
+        android:layout_below="@id/icono"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/nombre"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:background="#D8D8D8"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/nombre"
+        android:id="@+id/camponombre"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la edad:"
+        android:layout_below="@id/camponombre"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/edad"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edad"
+        android:id="@+id/rtnedades">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6 - 8 años"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9 - 12 años"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mas de 13 años"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Desea recivir las calificaciones en su correo?"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:checked="true"
+        android:layout_below="@id/rtnedades"
+        android:id="@+id/cali"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR"
+        android:layout_below="@id/cali"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:id="@+id/btnregistrar"
+        android:onClick="mensajeboton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracias por Visitarnos"
+        android:layout_below="@id/btnregistrar"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="#FF0000"
+        android:id="@+id/gra"/>
+
+</RelativeLayout>
